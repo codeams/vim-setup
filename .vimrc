@@ -172,6 +172,7 @@ nmap <C-t> <Plug>PeepOpen
 let NERDTreeHijackNetrw = 0
 
 "Make NERDTree easier to toggle.
+nmap <leader>r :NERDTreeFind<cr>
 nmap <leader>t :NERDTreeToggle<cr>
 
 "/
