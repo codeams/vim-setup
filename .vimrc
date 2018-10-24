@@ -63,7 +63,7 @@ set complete=.,w,b,u
 set softtabstop=2
 set tabstop=2 shiftwidth=2 expandtab
 set list
-set listchars=tab:▒░,trail:▓
+set listchars=tab:->,trail:·
 
 
 """""""""""""""""""""""""""""
