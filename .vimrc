@@ -155,7 +155,7 @@ nmap <Leader>f :tag<space>
 "/
 "/ CtrlP
 "/
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:ctrlp_custom_ignore = 'vendor\|node_modules\|DS_Store\|git'
 let g:ctrlp_match_window = 'top,order:ttb,min:1,max:10,results:30'
 
 nmap <C-p> :CtrlP<cr>
