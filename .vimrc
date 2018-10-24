@@ -36,6 +36,9 @@ set noswapfile
 " Configurations regarding the editor behavior
 """""""""""""""""""""""""""""
 
+"Disable text for the current mode at the bottom
+set noshowmode
+
 "Show match in parens, etc.
 set showmatch
 
