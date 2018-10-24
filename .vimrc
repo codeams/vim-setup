@@ -137,7 +137,7 @@ noremap <leader>s :vsp<cr>
 """""""""""""""""""""""""""""
 
 "Open .vimrc in new tab
-nmap <Leader>ev :tabedit $MYVIMRC<cr>
+nmap <Leader>ev :tabedit ~/Developer/vim-setup/.vimrc<cr>
 nmap <Leader>es :e ~/.vim/snippets/
 
 "Remove hlseearch

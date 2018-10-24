@@ -31,3 +31,9 @@ set guicursor=n-v-c:hor5-Cursor/lCursor-blinkwait500-blinkon1000-blinkoff400
   "Let the cursor be on for 1000ms
   "And then off by 0ms seconds before going on again
 set guicursor+=i:ver20-Cursor/lCursor-blinkwait500-blinkon1000-blinkoff0
+
+"Load machine-specific configuration
+if filereadable(expand("~/.gvimrc.local"))
+  source ~/.gvimrc.local
+endif
+
