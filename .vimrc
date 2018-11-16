@@ -36,9 +36,6 @@ set noswapfile
 " Configurations regarding the editor behavior
 """""""""""""""""""""""""""""
 
-"Disable text for the current mode at the bottom
-set noshowmode
-
 "Show match in parens, etc.
 set showmatch
 
@@ -132,6 +129,8 @@ noremap <leader>0 :tablast<cr>
 
 "More natural mapping to split the editor
 noremap <leader>s :vsp<cr>
+noremap <leader>o :tab sp<cr>
+noremap <leader>t :tabe<cr>
 
 
 
@@ -141,6 +140,8 @@ noremap <leader>s :vsp<cr>
 
 "Open .vimrc in new tab
 nmap <Leader>ev :tabedit ~/Developer/vim-setup/.vimrc<cr>
+nmap <Leader>eg :tabedit ~/Developer/vim-setup/.gvimrc<cr>
+nmap <Leader>ep :tabedit ~/Developer/vim-setup/.vim/plugins.vim<cr>
 nmap <Leader>es :e ~/.vim/snippets/
 
 "Remove hlseearch
@@ -158,7 +159,8 @@ nmap <Leader>f :tag<space>
 "/
 "/ CtrlP
 "/
-let g:ctrlp_custom_ignore = 'vendor\|node_modules\|DS_Store\|git'
+let g:ctrlp_custom_ignore = 'vendor\|node_modules\|DS_Store\|git\|dist\|build\|__generated__'
+let g:ag_prg='ag --ignore "./dist/*"'
 let g:ctrlp_match_window = 'top,order:ttb,min:1,max:10,results:30'
 
 nmap <C-p> :CtrlP<cr>
@@ -173,7 +175,7 @@ let NERDTreeHijackNetrw = 0
 
 "Make NERDTree easier to toggle.
 nmap <leader>r :NERDTreeFind<cr>
-nmap <leader>t :NERDTreeToggle<cr>
+nmap <leader>b :NERDTreeToggle<cr>
 
 "/
 "/ Greplace.vim

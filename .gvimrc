@@ -8,7 +8,7 @@ set guioptions-=e
 
 set termguicolors
 
-set macligatures
+"set macligatures
 
 set linespace=10
 
@@ -31,6 +31,17 @@ set guicursor=n-v-c:hor5-Cursor/lCursor-blinkwait500-blinkon1000-blinkoff400
   "Let the cursor be on for 1000ms
   "And then off by 0ms seconds before going on again
 set guicursor+=i:ver20-Cursor/lCursor-blinkwait500-blinkon1000-blinkoff0
+
+"""""""""""""""""""""""""""""
+" Editor
+" Configurations regarding the editor behavior
+"""""""""""""""""""""""""""""
+
+"Since the cursor will indicate if the editor is in
+"insert/replace/visual/normal mode, then let's
+"disable text for the current mode at the bottom
+set noshowmode
+
 
 "Load machine-specific configuration
 if filereadable(expand("~/.gvimrc.local"))
