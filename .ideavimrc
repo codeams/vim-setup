@@ -12,4 +12,4 @@ nmap gb :action Back<cr>
 
 nmap <leader>t :action ActivateTerminalToolWindow<cr>
 
-
+set surround
