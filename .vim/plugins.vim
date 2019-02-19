@@ -15,6 +15,7 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'airblade/vim-gitgutter'
 
 "Syntax
+Plugin 'tpope/vim-liquid'
 Plugin 'posva/vim-vue'
 Plugin 'mxw/vim-jsx'
 Plugin 'leafgarland/typescript-vim'
