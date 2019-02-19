@@ -1,7 +1,7 @@
 "codeams@gmail.com
 "Vim configuration
 
-set guifont=Operator_Mono_Lig_Book:h15
+set guifont=Operator_Mono_Book:h15
 
 "Disable GUI tabs in favor of native ones.
 set guioptions-=e
