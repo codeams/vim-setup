@@ -76,7 +76,7 @@ colorscheme palenight
 
 "Let's place this here too
 "since I'll be using iterm2
-set termguicolors
+"set termguicolors
 
 "Fake a custom left padding for each window.
 hi LineNr guibg=bg
