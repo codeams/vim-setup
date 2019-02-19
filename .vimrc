@@ -87,7 +87,7 @@ hi foldcolumn guibg=bg
 hi vertsplit guifg=bg guibg=bg
 
 "Remove the status bar.
-set laststatus=0
+set laststatus=2
 
 
 """""""""""""""""""""""""""""
