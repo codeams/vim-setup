@@ -86,8 +86,8 @@ hi foldcolumn guibg=bg
 "Get rid of split borders.
 hi vertsplit guifg=bg guibg=bg
 
-"Remove the status bar.
-set laststatus=2
+"Control the visibility of the status bar.
+set laststatus=2 "Set to 0 to hide or 2 if you'd like to see filenames
 
 
 """""""""""""""""""""""""""""
