@@ -13,6 +13,7 @@ Plugin 'skwp/greplace.vim'
 Plugin 'msanders/snipmate.vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'jamessan/vim-gnupg'
 
 "Syntax
 Plugin 'tpope/vim-liquid'
