@@ -36,6 +36,9 @@ set noswapfile
 " Configurations regarding the editor behavior
 """""""""""""""""""""""""""""
 
+"Open the file explorer in view mode 3 (tree lol)
+let g:netrw_liststyle = 3
+
 "Show match in parens, etc.
 set showmatch
 
@@ -130,7 +133,8 @@ noremap <leader>0 :tablast<cr>
 "More natural mapping to split the editor
 noremap <leader>s :vsp<cr>
 noremap <leader>o :tab sp<cr>
-noremap <leader>t :tabe<cr>
+"noremap <leader>t :tabe<cr>
+nnoremap <leader>t :tabnew<CR>:Ex . <CR>
 
 
 
@@ -200,6 +204,10 @@ nmap <Leader><Leader>c :e app/Http/Controllers/<cr>
 nmap <Leader><Leader>m :CtrlP<cr>app/
 nmap <Leader><Leader>v :e resources/views/<cr>
 
+"""""""""""""""""""""""""""""
+" Django specific
+"""""""""""""""""""""""""""""
+" nothing yet lol
 
 """""""""""""""""""""""""""""
 " Auto commands
