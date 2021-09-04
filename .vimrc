@@ -39,11 +39,24 @@ set noswapfile
 "Open the file explorer in view mode 3 (tree lol)
 let g:netrw_liststyle = 3
 
+"Don't show the banner in the new tab page
+let g:netrw_banner = 0
+
 "Show match in parens, etc.
 set showmatch
 
 "Disable line numbers.
 set nonumber
+
+"Disable the char and line counter
+set noruler
+
+"Only show the X FILE WRITTEN for a moment
+set noshowcmd
+set noshowmode
+
+"Hide the file name at the bottom
+set ls=0
 
 "Disable line wrapping.
 set nowrap
@@ -86,12 +99,6 @@ hi LineNr guibg=bg
 set foldcolumn=2
 hi foldcolumn guibg=bg
 
-"Get rid of split borders.
-hi vertsplit guifg=bg guibg=bg
-
-"Control the visibility of the status bar.
-set laststatus=2 "Set to 0 to hide or 2 if you'd like to see filenames
-
 
 """""""""""""""""""""""""""""
 " Search
@@ -133,7 +140,6 @@ noremap <leader>0 :tablast<cr>
 "More natural mapping to split the editor
 noremap <leader>s :vsp<cr>
 noremap <leader>o :tab sp<cr>
-"noremap <leader>t :tabe<cr>
 nnoremap <leader>t :tabnew<CR>:Ex . <CR>
 
 
@@ -144,7 +150,7 @@ nnoremap <leader>t :tabnew<CR>:Ex . <CR>
 
 "Open .vimrc in new tab
 nmap <Leader>ev :tabedit ~/Developer/vim-setup/.vimrc<cr>
-nmap <Leader>eg :tabedit ~/Developer/vim-setup/.gvimrc<cr>
+"nmap <Leader>eg :tabedit ~/Developer/vim-setup/.gvimrc<cr>
 nmap <Leader>ep :tabedit ~/Developer/vim-setup/.vim/plugins.vim<cr>
 nmap <Leader>es :e ~/.vim/snippets/
 
