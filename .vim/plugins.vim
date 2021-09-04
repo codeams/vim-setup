@@ -14,6 +14,7 @@ Plugin 'msanders/snipmate.vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'jamessan/vim-gnupg'
+Plugin 'terryma/vim-multiple-cursors'
 
 "Syntax
 Plugin 'tpope/vim-liquid'
