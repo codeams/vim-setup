@@ -115,6 +115,9 @@ set incsearch
 " Split Management
 """""""""""""""""""""""""""""
 
+"Use dots to divide vertical splits
+:set fillchars+=vert:\.
+
 "Make splits default to below and the right
 set splitbelow
 set splitright
