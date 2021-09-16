@@ -170,6 +170,11 @@ nmap <Leader>f :tag<space>
 """""""""""""""""""""""""""""
 
 "/
+"/ Toggle cursor
+"/
+ let g:togglecursor_force = 'xterm'
+
+"/
 "/ CtrlP
 "/
 let g:ctrlp_custom_ignore = 'vendor\|node_modules\|DS_Store\|git\|dist\|build\|__generated__'
