@@ -1,3 +1,5 @@
+set encoding=utf8
+
 "codeams@gmail.com
 "Vim configuration
 
@@ -30,6 +32,9 @@ set updatetime=100
 "Dont' create a swap file
 set noswapfile
 
+"Change tab names
+let g:taboo_tab_format = "[%N] %f %m  "
+let g:taboo_renamed_tab_format = "[%N] %l %m  "
 
 """""""""""""""""""""""""""""
 " Editor
