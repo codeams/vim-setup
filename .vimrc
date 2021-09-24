@@ -243,21 +243,14 @@ if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
 
-
-" Configure cursor modes
-" &t_SI configures insert
-" &t_EI configures normal mode
-"
-" Source:
-" https://github.com/Casecommons/casecommons_workstation/blob/master/templates/default/dot_tmux.conf.erb
-" https://github.com/Casecommons/vim-config/blob/master/init/tmux.vim
-
-
-if exists('$TMUX')
-  let &t_SI = "\<Esc>[5 q"
-  let &t_EI = "\<Esc>[2 q"
-else
-  let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-  let &t_EI = "\<Esc>]50;CursorShape=1\x7"
+"Change cursor to line on Insert mode and block on normal/visual
+if exists('$ITERM_PROFILE')
+  if exists('$TMUX')
+    let &t_SI = "\<Esc>[3 q"
+    let &t_EI = "\<Esc>[0 q"
+  else
+    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+  endif
 end
 

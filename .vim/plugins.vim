@@ -16,6 +16,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'jamessan/vim-gnupg'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'gcmt/taboo.vim'
+Plugin 'jszakmeister/vim-togglecursor'
 
 "Syntax
 Plugin 'tpope/vim-liquid'
