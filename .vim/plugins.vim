@@ -17,6 +17,7 @@ Plugin 'jamessan/vim-gnupg'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'gcmt/taboo.vim'
 Plugin 'jszakmeister/vim-togglecursor'
+Plugin 'tweekmonster/django-plus.vim'
 
 "Syntax
 Plugin 'tpope/vim-liquid'
