@@ -48,7 +48,7 @@ let g:netrw_liststyle = 3
 let g:netrw_banner = 0
 
 "Show match in parens, etc.
-set showmatch
+"set showmatch
 
 "Disable line numbers.
 set nonumber
@@ -121,7 +121,7 @@ set incsearch
 """""""""""""""""""""""""""""
 
 "Use dots to divide vertical splits
-:set fillchars+=vert:\.
+:set fillchars+=vert:\ 
 
 "Make splits default to below and the right
 set splitbelow
