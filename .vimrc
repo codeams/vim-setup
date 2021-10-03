@@ -14,6 +14,7 @@ so ~/.vim/plugins.vim
 "Change leader to something closer to my fingers :smirk:.
 let mapleader = ','
 
+
 """""""""""""""""""""""""""""
 " Vim behavior
 " Configurations regarding the way vim should work.
@@ -35,6 +36,7 @@ set noswapfile
 "Change tab names
 let g:taboo_tab_format = "[%N] %f %m  "
 let g:taboo_renamed_tab_format = "[%N] %l %m  "
+
 
 """""""""""""""""""""""""""""
 " Editor
@@ -151,7 +153,6 @@ noremap <leader>o :tab sp<cr>
 nnoremap <leader>t :tabnew<CR>:Ex . <CR>
 
 
-
 """""""""""""""""""""""""""""
 " General Mappings
 """""""""""""""""""""""""""""
@@ -175,11 +176,6 @@ nmap <Leader>f :tag<space>
 """""""""""""""""""""""""""""
 
 "/
-"/ Toggle cursor
-"/
- let g:togglecursor_force = 'xterm'
-
-"/
 "/ CtrlP
 "/
 let g:ctrlp_custom_ignore = 'vendor\|node_modules\|DS_Store\|git\|dist\|build\|__generated__'
@@ -192,41 +188,31 @@ nmap <C-e> :CtrlPMRUFiles<cr>
 nmap <C-t> <Plug>PeepOpen
 
 "/
-"/ NERDTree
-"/
-let NERDTreeHijackNetrw = 0
-
-"Make NERDTree easier to toggle.
-nmap <leader>r :NERDTreeFind<cr>
-nmap <leader>b :NERDTreeToggle<cr>
-
-"/
-"/ Greplace.vim
-"/
-let g:grep_cmd_opts = '--line-numbers --noheading'
-
-"Use Ag for the search.
-set grepprg=ag
-
-"/
 "/ GitGutter
 "/
 noremap  <Leader>g :GitGutterToggle<CR>
 
 
 """""""""""""""""""""""""""""
-" Laravel specific
+" Vim cursor
 """""""""""""""""""""""""""""
-nmap <Leader>lr :e app/Http/routes.php<cr>
-nmap <Leader>lm :!php artisan make:
-nmap <Leader><Leader>c :e app/Http/Controllers/<cr>
-nmap <Leader><Leader>m :CtrlP<cr>app/
-nmap <Leader><Leader>v :e resources/views/<cr>
 
-"""""""""""""""""""""""""""""
-" Django specific
-"""""""""""""""""""""""""""""
-" nothing yet lol
+"/
+"/ Toggle cursor plugin
+"/
+let g:togglecursor_force = 'xterm'
+
+"Change cursor to line on Insert mode and block on normal/visual
+if exists('$ITERM_PROFILE')
+  if exists('$TMUX')
+    let &t_SI = "\<Esc>[3 q"
+    let &t_EI = "\<Esc>[0 q"
+  else
+    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+  endif
+end
+
 
 """""""""""""""""""""""""""""
 " Auto commands
@@ -242,15 +228,3 @@ augroup END
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
-
-"Change cursor to line on Insert mode and block on normal/visual
-if exists('$ITERM_PROFILE')
-  if exists('$TMUX')
-    let &t_SI = "\<Esc>[3 q"
-    let &t_EI = "\<Esc>[0 q"
-  else
-    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-  endif
-end
-
